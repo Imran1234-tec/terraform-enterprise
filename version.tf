@@ -10,4 +10,5 @@ terraform {
 
 provider "aws" {
   region = "ap-west-2"
+   shared_config_files      = ["/Users/sures/.aws/config"]
 }
