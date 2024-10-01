@@ -10,5 +10,7 @@ terraform {
 
 provider "aws" {
   region = "ap-west-2"
-   shared_config_files      = ["/Users/sures/.aws/config"]
+  assume_role {
+    role_arn = "arn:aws:iam::767397855517:role/terraform_role"
+  }
 }
