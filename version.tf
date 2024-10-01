@@ -10,7 +10,6 @@ terraform {
 
 provider "aws" {
   region = "ap-west-2"
-  assume_role {
-    role_arn = "arn:aws:iam::767397855517:role/s3_role"
-  }
+  access_key = "AWS_ACCESS_KEY"
+  secret_key = "AWS_SECRET_ACCESS_KEY"
 }
